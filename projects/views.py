@@ -6,7 +6,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def projects(request):
-    return HttpResponse("Projects list")
+    return render(request,'projects/projects.html')
 
 def project(request,pk):
-    return HttpResponse(f"This is project {pk}")
+    return render(request,'projects/single-project.html')
